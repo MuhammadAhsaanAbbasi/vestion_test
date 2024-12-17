@@ -10,7 +10,7 @@ const Hero = () => {
                 backgroundImage: `radial-gradient(440.5% 46.31% at 50% 110.88%, rgba(0, 0, 0, 0.9) 43.05%, rgba(0, 0, 0, 0) 100%), 
                                 linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
                                 linear-gradient(175.55deg, rgba(0, 0, 0, 0) 90.41%, #000000 99.82%), 
-                                url('/images/Hero Section.png')`
+                                url('/images/hero.png')`
             }}>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-secondary opacity-60"></div>
             <div className='w-[345px] md:w-[774px] flex flex-col md:justify-center items-start md:items-center text-left md:text-center font-normal gap-8 relative -top-10 sm:-top-5 md:top-0'>

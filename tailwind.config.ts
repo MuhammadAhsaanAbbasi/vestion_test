@@ -52,9 +52,15 @@ export default {
 				}
 			},
 			fontFamily: {
-				inter: ["var(--font-inter)"],
-				poppins: ["var(--font-poppins)"],
-				open_sans: ["var(--font-open_sans)"],
+				inter: [
+					'var(--font-inter)'
+				],
+				poppins: [
+					'var(--font-poppins)'
+				],
+				open_sans: [
+					'var(--font-open_sans)'
+				]
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -62,8 +68,30 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'hero': "url('/images/Hero Section.png')",
-				'eco-gradient': 'linear-gradient(180deg, #000000 0%, #000000 59.67%, #1E1E1E 104.78%)',
+				hero: `url('/images/hero.png')`,
+				'eco-gradient': 'linear-gradient(180deg, #000000 0%, #000000 59.67%, #1E1E1E 104.78%)'
+			},
+			keyframes: {
+				'accordion-down': {
+					from: {
+						height: '0'
+					},
+					to: {
+						height: 'var(--radix-accordion-content-height)'
+					}
+				},
+				'accordion-up': {
+					from: {
+						height: 'var(--radix-accordion-content-height)'
+					},
+					to: {
+						height: '0'
+					}
+				}
+			},
+			animation: {
+				'accordion-down': 'accordion-down 0.2s ease-out',
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},
