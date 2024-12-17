@@ -87,3 +87,37 @@ export const benefits = [
         icon: security
     },
 ]
+
+export const testimonials = [
+    {
+        quote:
+            "Lorem ipsum dolor sit amet consectetur. Bibendum quis fringilla odio maecenas magna eu ultrices aliquam egestas. Enim phasellus eu commodo nibh vitae amet elit. Ut natoque dui.",
+        name: "Adrian Hajdin",
+        picture: "https://myapplication-logos.s3.ap-south-1.amazonaws.com/Adrian.jpeg",
+        position: "CEO",
+        company: "IT, Company"
+    },
+    {
+        quote:
+            "Lorem ipsum dolor sit amet consectetur. Bibendum quis fringilla odio maecenas magna eu ultrices aliquam egestas. Enim phasellus eu commodo nibh vitae amet elit. Ut natoque dui.",
+        name: "Ameen Alam",
+        picture: "https://myapplication-logos.s3.ap-south-1.amazonaws.com/ameen.jpeg",
+        position: "CEO",
+        company: "IT, Company"
+    },
+    {
+        quote: "Lorem ipsum dolor sit amet consectetur. Bibendum quis fringilla odio maecenas magna eu ultrices aliquam egestas. Enim phasellus eu commodo nibh vitae amet elit. Ut natoque dui.",
+        name: "Okasha Aijaz",
+        picture: "https://myapplication-logos.s3.ap-south-1.amazonaws.com/Okasha.jpeg",
+        position: "CEO",
+        company: "IT, Company"
+    },
+    {
+        quote:
+            "Lorem ipsum dolor sit amet consectetur. Bibendum quis fringilla odio maecenas magna eu ultrices aliquam egestas. Enim phasellus eu commodo nibh vitae amet elit. Ut natoque dui.",
+        name: "Jahanzaib Tayyab",
+        picture: "https://myapplication-logos.s3.ap-south-1.amazonaws.com/jahanzaib.jpeg",
+        position: "CEO",
+        company: "IT, Company"
+    }
+];
