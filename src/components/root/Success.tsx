@@ -8,16 +8,12 @@ const Success = () => {
                 {SuccessData.map((item, index) => (
                     <div
                         key={index}
-                        className={`flex-1 flex flex-col justify-center items-center gap-2 ${
-                            index !== SuccessData.length - 1
-                                ? "relative"
-                                : ""
-                        }`}
+                        className={`flex-1 flex flex-col justify-center items-center gap-2 relative`}
                     >
-                        {/* Vertical Divider
+                        {/* Vertical Divider */}
                         {index !== SuccessData.length - 1 && (
-                        )} */}
-                        <div className="hidden md:block absolute top-0 right-0 h-full w-[2px] bg-white" />
+                            <div className="absolute max-md:top-14 md:top-0 md:right-0 h-full w-[2px] rotate-90 md:rotate-0 bg-white" />
+                        )}
 
                         {/* Score */}
                         <span className="text-yellow-400 text-4xl md:text-5xl font-semibold">

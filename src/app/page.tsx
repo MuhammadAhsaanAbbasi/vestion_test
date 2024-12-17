@@ -1,3 +1,4 @@
+import Benefits from "@/components/root/Benefits";
 import EcoSystem from "@/components/root/EcoSystem";
 import Hero from "@/components/root/Hero";
 import Success from "@/components/root/Success";
@@ -11,6 +12,7 @@ export default function Home() {
       <EcoSystem />
       <Success />
       <UniqueEcoSystem />
+      <Benefits />
     </main>
   );
 }

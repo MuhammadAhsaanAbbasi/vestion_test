@@ -10,11 +10,11 @@ const EcoSystem = () => {
                 <h6 className='text-lg font-medium text-primary'>
                     EcoSystem
                 </h6>
-                <h2 className='text-2xl md:text-3xl font-normal w-[345px] md:w-[822px]'>
+                <h2 className='text-xl sm:text-2xl lg:text-3xl font-normal w-[345px] sm:w-[450px] lg:w-[822px]'>
                     Unlocking the Future of Finance with a Unified Ecosystem for Digital and Traditional Investments
                 </h2>
             </div>
-            <div className='flex flex-col-reverse md:flex-row justify-center items-start md:items-center gap-6'>
+            <div className='flex flex-col-reverse lg:flex-row justify-center items-start md:items-center gap-6'>
                 {/* Image */}
                 <div className='flex-1 flex flex-col justify-center items-center gap-5'>
                     <Image
@@ -23,13 +23,13 @@ const EcoSystem = () => {
                         width={473}
                         height={472.37}
                     />
-                    <div className='inline-flex md:hidden'>
+                    <div className='inline-flex lg:hidden'>
                         <ExploreButton />
                     </div>
                 </div>
                 {/* Other Text */}
                 <div className='flex flex-col justify-between items-start gap-12 pl-0 md:pl-6 flex-1'>
-                    <div className='w-full md:w-[34vw] flex flex-col justify-between items-start gap-9'>
+                    <div className='w-full sm:w-[70vw] lg:w-[34vw] flex flex-col justify-between items-start gap-9'>
                         <h4 className='tracking-[0.02em] text-xl md:text-2xl font-medium'>
                             The Vestion Ecosystem: Bridging the Gap Between Blockchain Innovation and Conventional Finance
                         </h4>
@@ -40,7 +40,7 @@ const EcoSystem = () => {
                             Experience the next evolution in finance, where blockchain technology empowers you to securely invest in and manage real-world assets with ease
                         </p>
                     </div>
-                    <div className='hidden md:inline-flex'>
+                    <div className='hidden lg:inline-flex'>
                         <ExploreButton />
                     </div>
                 </div>

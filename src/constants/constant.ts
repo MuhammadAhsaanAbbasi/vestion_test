@@ -1,3 +1,8 @@
+import stabality from "@/../public/bxs_coin.svg"
+import growth from "@/../public/growth.svg"
+import innovation from "@/../public/innovation.svg"
+import security from "@/../public/security.svg"
+
 export const navList = [
     {
         name: 'HOme',
@@ -56,5 +61,29 @@ export const uniqueEcoSystemData = [
     {
         title: "VPP (Payment Protocol)",
         description: "A cutting-edge solution for Web3 and beyond, VPP simplifies global payments, offering low fees, fast transactions, and a decentralized infrastructure. Visual Suggestion: A globe with interconnected nodes representing a universal financial network."
+    },
+]
+
+
+export const benefits = [
+    {
+        title: "Stability",
+        description: "VESC stablecoin, backed 1:1 by real-world assets, ensures safe and reliable transactions",
+        icon: stabality
+    },
+    {
+        title: "Growth",
+        description: "VES token offers long-term value appreciation linked to ecosystem adoption",
+        icon: growth
+    },
+    {
+        title: "Innovation",
+        description: "Seamlessly integrates fiat and crypto for a truly universal financial solution",
+        icon: innovation
+    },
+    {
+        title: "Security",
+        description: "Built on cutting-edge blockchain technology with industry-leading compliance measures",
+        icon: security
     },
 ]

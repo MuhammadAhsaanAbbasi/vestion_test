@@ -10,8 +10,8 @@ import { Button } from '../ui/button';
 
 const Footer = () => {
     return (
-        <footer className="bg-secondary text-gray-300 px-8 md:px-16 py-10">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
+        <footer className="bg-secondary text-gray-300 px-8 sm:px-10 md:px-16 py-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
                 {/* Company Info */}
                 <div className="flex flex-col gap-4">
                     <Image
@@ -21,14 +21,14 @@ const Footer = () => {
                         height={45}
                     />
                     <div>
-                        <p className="text-yellow-400 font-medium">Vestion Holdings</p>
+                        <p className="text-primary font-medium">Vestion Holdings</p>
                         <p className="text-sm">
                             7 Temasek Boulevard, <br />
                             #12-07 Suntec Tower One, <br />
                             Singapore 038987
                         </p>
                     </div>
-                    <div className="flex space-x-4 mt-2">
+                    <div className="flex items-center gap-4">
                         <Link href="#">
                             <Image
                                 src={twitter}
@@ -109,12 +109,11 @@ const Footer = () => {
                         </Button>
                     </div>
                     {/* Tagline */}
-                    <p className="text-white text-lg font-light text-right">
+                    <p className="text-white text-lg font-light text-center md:text-right">
                         Beyond Currency. <br /> Beyond Limits.
                     </p>
                 </div>
             </div>
-
 
             {/* Copyright */}
             <div className="text-center text-sm text-gray-500 mt-8">
