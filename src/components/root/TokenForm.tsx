@@ -1,13 +1,14 @@
 "use client";
 import React from 'react';
-import { ArrowRight, Menu } from 'lucide-react';
+import { ArrowDown, ArrowRight, Menu } from 'lucide-react';
 import { Button } from '../ui/button';
+import { Input } from '../ui/input';
 // If you have a custom Icon for ETH or VES, replace with actual components or <Image> tags.
 
 const TokenForm = () => {
     return (
-        <section className="relative w-full min-h-screen bg-form-gradient flex items-center justify-center py-20 px-4 md:px-10">
-            <div className="max-w-7xl w-full mx-auto bg-primary relative rounded-xl flex flex-col md:flex-row md:items-stretch gap-8 p-8 md:p-10">
+        <section className="relative w-full min-h-screen bg-form-gradient flex justify-center items-center px-10 md:px-20 py-10 md:py-20">
+            <div className="w-full mx-auto bg-primary relative rounded-xl flex flex-col md:flex-row md:items-stretch gap-8 p-8 md:p-10">
 
                 {/* Left Card (Yellow Box) */}
                 <div className="flex flex-col justify-center basis-3/5 gap-8">
@@ -19,17 +20,16 @@ const TokenForm = () => {
                         Early joiners not only shape the future but also position themselves
                         for maximum growth and gains. The earlier you invest, the greater your potential rewards.
                     </p>
-
-                    <Button className='flex items-center space-x-2 py-2 px-2 border border-white rounded-lg bg-transparent font-normal text-xs md:text-sm text-white hover:border-[#FFC107] hover:text-[#FFC107] transition duration-300 w-auto'>
-                        <span>Discover the Future of Banking</span>
+                    <Button className='flex items-center space-x-2 py-2 px-2 border border-white rounded-lg bg-transparent font-normal text-xs md:text-sm text-white hover:border-secondary hover:text-secondary transition duration-300 w-[20vw]'>
+                        <span>Join Our Community</span>
                         <ArrowRight className="h-4 w-4" />
                     </Button>
                 </div>
 
                 {/* Right Card (Buy Token Form) */}
-                <div className="md:absolute md:right-0 md:bottom-0 max-w-sm w-full flex-1 bg-white rounded-xl shadow-lg p-6 space-y-5">
+                <div className="md:absolute md:right-10 md:bottom-0 max-w-sm w-full flex-1 bg-white rounded-xl shadow-lg p-6 space-y-2">
                     {/* Header */}
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center justify-between">
                         <h3 className="text-black font-medium text-lg">
                             Buy Token
                         </h3>
@@ -37,50 +37,66 @@ const TokenForm = () => {
                     </div>
 
                     {/* "You pay" section */}
-                    <div className="border border-neutral-300 rounded-lg p-4 flex flex-col space-y-2">
-                        <div className="flex items-center justify-between">
-                            <span className="text-sm text-neutral-700">You pay</span>
-                            <div className="flex items-center space-x-2">
-                                <input
+                    <div className="border border-[#E9E9E9] rounded-lg p-4 flex justify-between items-center relative top-5">
+                        <div className="flex flex-col items-start justify-between gap-2">
+                            <div className="flex flex-col items-start">
+                                <span className="text-sm text-neutral-700">You pay</span>
+                                <Input
                                     type="number"
                                     value="0.5"
-                                    className="w-16 bg-transparent text-black text-base font-medium outline-none text-right"
+                                    className="w-16 bg-transparent outline-none text-3xl font-semibold text-[#1E2329]"
                                     readOnly
                                 />
-                                <button className="text-sm text-black bg-neutral-200 px-2 py-1 rounded">
-                                    ETH
-                                </button>
+                            </div>
+                            <div className='flex items-center gap-5 text-xs text-neutral-500'>
+                                <span>
+                                    Estimated cost:
+                                </span>
+                                <span>
+                                    ~$14.27
+                                </span>
                             </div>
                         </div>
-                        <span className="text-xs text-neutral-500">Estimated cost: ~$14.27</span>
+                        <button className="text-sm text-black bg-neutral-200 px-2 py-1 rounded">
+                            ETH
+                        </button>
                     </div>
 
                     {/* Arrow icon to indicate conversion */}
-                    <div className="flex justify-center">
-                        <div className="bg-[#FFC107] w-8 h-8 rounded-full flex items-center justify-center">
-                            <span className="text-black text-lg">↓</span>
+                    <div className="flex justify-center relative z-20">
+                        <div className="bg-[#FFC107] w-10 h-10 rounded-full flex items-center justify-center">
+                            <ArrowDown />
                         </div>
                     </div>
 
                     {/* "You get" section */}
-                    <div className="border border-neutral-300 rounded-lg p-4 flex flex-col space-y-2">
-                        <div className="flex items-center justify-between">
-                            <span className="text-sm text-neutral-700">You get</span>
-                            <div className="flex items-center space-x-2">
-                                <span className="text-base font-medium text-black">15,384.61</span>
-                                <button className="text-sm text-black bg-neutral-200 px-2 py-1 rounded">
-                                    VES
-                                </button>
+                    <div className="border border-[#E9E9E9] rounded-lg p-4 flex justify-between items-center relative bottom-5">
+                        <div className="flex flex-col items-start justify-between gap-2">
+                            <div className="flex flex-col items-start">
+                                <span className="text-sm text-neutral-700">You get</span>
+                                <span className="text-3xl font-semibold text-[#1E2329]">
+                                    15,384.61
+                                </span>
+                            </div>
+                            <div className='flex items-center gap-5 text-xs text-neutral-500'>
+                                <span>
+                                    Total supply:
+                                </span>
+                                <span>
+                                    87520
+                                </span>
                             </div>
                         </div>
-                        <span className="text-xs text-neutral-500">Total supply: 87520</span>
+                        <button className="text-sm text-black bg-neutral-200 px-2 py-1 rounded">
+                            ETH
+                        </button>
                     </div>
 
                     {/* Agreement, Buy Button & Exchange Rate Info */}
                     <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="flex items-start gap-2">
-                            <input type="checkbox" className="h-4 w-4 border border-neutral-400" />
-                            <p className='text-xs text-neutral-700'>
+                        <div className="flex justify-center items-center gap-2">
+                            <Input type="checkbox" className="h-4 w-4 border border-neutral-400" />
+                            <p className='text-sm text-neutral-700'>
                                 By continuing I agree to <a href="#" className="text-[#FFC107] underline">Token Purchase Agreement</a>
                             </p>
                         </div>
