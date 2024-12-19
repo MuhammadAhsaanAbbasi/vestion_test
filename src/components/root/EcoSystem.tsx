@@ -5,7 +5,7 @@ import ExploreButton from '../shared/ExploreButton'
 
 const EcoSystem = () => {
     return (
-        <section className='flex flex-col justify-center items-start md:items-center gap-16 py-20 bg-eco-gradient px-6'>
+        <section id='ecosystem' className='flex flex-col justify-center items-start md:items-center gap-16 py-20 bg-eco-gradient px-6'>
             <div className='text-left md:text-center flex flex-col justify-center gap-4'>
                 <h6 className='text-lg font-medium text-primary'>
                     EcoSystem

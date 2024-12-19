@@ -25,7 +25,7 @@ export default {
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: '#00010A',
+					DEFAULT: '#1D1D1D',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				muted: {
@@ -69,7 +69,12 @@ export default {
 			},
 			backgroundImage: {
 				hero: `url('/images/hero.png')`,
-				'eco-gradient': 'linear-gradient(180deg, #000000 0%, #000000 59.67%, #1E1E1E 104.78%)'
+				'eco-gradient': 'linear-gradient(180deg, #000000 0%, #000000 59.67%, #1E1E1E 104.78%)',
+				'leo-gradient': 'linear-gradient(180deg, #1D1D1D 0%, #06090B 100%)',
+				'unique-gradient': 'linear-gradient(180deg, #1E1E1E 0%, #121212 100%)',
+				'footer-gradient': 'radial-gradient(100% 100% at 50% 0%, #1E1E1E 0%, #121212 100%)',
+				'token-gradient': 'linear-gradient(180deg, #000000 0%, #1E1E1E 100%)',
+				'form-gradient': 'linear-gradient(181.43deg, #020405 1.21%, #252525 43.38%, #1D1D1D 94.3%)',
 			},
 			keyframes: {
 				'accordion-down': {

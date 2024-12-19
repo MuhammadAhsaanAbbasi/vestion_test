@@ -10,7 +10,7 @@ import { Button } from '../ui/button';
 
 const Footer = () => {
     return (
-        <footer className="bg-secondary text-gray-300 px-8 sm:px-10 md:px-16 py-10">
+        <footer className="bg-footer-gradient text-gray-300 px-8 sm:px-10 md:px-16 py-10">
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
                 {/* Company Info */}
                 <div className="flex flex-col gap-4">

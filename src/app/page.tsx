@@ -2,9 +2,11 @@ import Benefits from "@/components/root/Benefits";
 import EcoSystem from "@/components/root/EcoSystem";
 import FrequentAnswerQuestion from "@/components/root/Faqs";
 import Hero from "@/components/root/Hero";
+import SaleStage from "@/components/root/SaleStage";
 import Success from "@/components/root/Success";
 import Testimonials from "@/components/root/Testimonials";
-// import Tokenomics from "@/components/root/Tokenomics";
+import TokenForm from "@/components/root/TokenForm";
+import Tokenomics from "@/components/root/Tokenomics";
 import UniqueEcoSystem from "@/components/root/UniqueEcoSystem";
 
 
@@ -16,8 +18,10 @@ export default function Home() {
       <Success />
       <UniqueEcoSystem />
       <Benefits />
-      {/* <Tokenomics /> */}
+      <Tokenomics />
       <Testimonials />
+      <SaleStage />
+      <TokenForm />
       <FrequentAnswerQuestion />
     </main>
   );

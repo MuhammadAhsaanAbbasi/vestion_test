@@ -10,15 +10,15 @@ export const navList = [
     },
     {
         name: 'EcoSystem',
-        link: '/services/webappdevelopment'
+        link: '/#ecosystem'
     },
     {
         name: 'Benefits',
-        link: '/services/devops'
+        link: '/#benefits'
     },
     {
         name: 'tokenomics',
-        link: '/services/devops'
+        link: '/#tokenomics'
     },
 ]
 

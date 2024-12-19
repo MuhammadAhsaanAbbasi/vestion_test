@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 const Benefits = () => {
     return (
-        <section className="flex flex-col lg:flex-row justify-center items-start gap-8 bg-eco-gradient text-white py-8 md:py-16 lg:py-28 px-8 md:px-16 lg:px-24">
+        <section id="benefits" className="flex flex-col lg:flex-row justify-center items-start gap-8 bg-eco-gradient text-white py-8 md:py-16 lg:py-28 px-8 md:px-16 lg:px-24">
             {/* Title Section */}
             <div className="basis-3/4 text-left flex flex-col justify-center gap-5">
                 <h6 className="text-yellow-400 font-medium text-sm uppercase">

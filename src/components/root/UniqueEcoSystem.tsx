@@ -3,7 +3,7 @@ import React from 'react'
 
 const UniqueEcoSystem = () => {
     return (
-        <section className="text-white px-4 sm:px-10 py-10 sm:py-16 md:py-28 md:px-16 space-y-12">
+        <section className="bg-unique-gradient text-white px-4 sm:px-10 py-10 sm:py-16 md:py-28 md:px-16 space-y-12">
             {/* Heading */}
             <div className="text-center">
                 <h2 className="text-2xl md:text-3xl font-semibold">

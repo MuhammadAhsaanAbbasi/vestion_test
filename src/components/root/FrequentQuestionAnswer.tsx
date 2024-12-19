@@ -23,7 +23,7 @@ export const FrequentQuestionAnswer = () => {
     ];
 
     return (
-        <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto my-12 space-y-5">
+        <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto my-5 space-y-5">
             {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="w-full">
                     <AccordionTrigger className="p-4 text-xl font-semibold flex justify-between items-center w-full bg-[#232323]">

@@ -1,8 +1,9 @@
 import React from 'react'
+import { TokenGrids } from './TokenGrids'
 
 const Tokenomics = () => {
     return (
-        <div>Tokenomics</div>
+        <TokenGrids id='tokenomics' />
     )
 }
 

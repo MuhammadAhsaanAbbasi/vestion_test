@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/navigation/Header";
 
-import { Poppins, Inter, Open_Sans } from 'next/font/google'
+import { Poppins, Inter, DM_Sans } from 'next/font/google'
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import Footer from "@/components/navigation/Footer";
@@ -14,9 +14,9 @@ const poppins = Poppins({
   variable: '--font-poppins',
 })
 
-const open_sans = Open_Sans({
+const open_sans = DM_Sans({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800',],
+  weight: [ "100" , "200", '300', '400', '500', '600', '700', '800', "900", "1000"],
   variable: '--font-open_sans',
 })
 
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${inter.variable} ${open_sans.variable} antialiased bg-[#1D1D1D] text-white`}
+        className={`${poppins.variable} ${inter.variable} ${open_sans.variable} antialiased bg-secondary text-white`}
       >
         <Header />
         {children}
