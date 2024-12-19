@@ -4,6 +4,14 @@ import { ArrowDown, ArrowRight, Menu } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 // If you have a custom Icon for ETH or VES, replace with actual components or <Image> tags.
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select"
+import Image from 'next/image';
 
 const TokenForm = () => {
     return (
@@ -57,9 +65,36 @@ const TokenForm = () => {
                                 </span>
                             </div>
                         </div>
-                        <button className="text-sm text-black bg-neutral-200 px-2 py-1 rounded">
-                            ETH
-                        </button>
+                        <Select>
+                            <SelectTrigger className="w-28 text-secondary font-poppins font-medium">
+                                <SelectValue placeholder="Select payment Currency" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectItem value="eth">
+                                    <div className='flex items-center gap-2'>
+                                        <Image
+                                            src={"/eth.svg"}
+                                            alt='VES'
+                                            height={21}
+                                            width={21}
+                                        />
+                                        ETH
+                                    </div>
+                                </SelectItem>
+                                <SelectItem value="ves" className='flex items-center gap-2'>
+                                    <div className='flex items-center gap-2'>
+
+                                        <Image
+                                            src={"/vestion.svg"}
+                                            alt='VES'
+                                            height={21}
+                                            width={21}
+                                        />
+                                        VES
+                                    </div>
+                                </SelectItem>
+                            </SelectContent>
+                        </Select>
                     </div>
 
                     {/* Arrow icon to indicate conversion */}
@@ -87,9 +122,37 @@ const TokenForm = () => {
                                 </span>
                             </div>
                         </div>
-                        <button className="text-sm text-black bg-neutral-200 px-2 py-1 rounded">
-                            ETH
-                        </button>
+                        <Select>
+                            <SelectTrigger className="w-28 text-secondary font-poppins font-medium">
+                                <SelectValue placeholder="Select your Currency" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectItem value="eth">
+                                    <div className='flex items-center gap-2'>
+                                        <Image
+                                            src={"/eth.svg"}
+                                            alt='VES'
+                                            height={21}
+                                            width={21}
+                                        />
+                                        ETH
+                                    </div>
+                                </SelectItem>
+                                <SelectItem value="ves" className='flex items-center gap-2'>
+                                    <div className='flex items-center gap-2'>
+
+                                        <Image
+                                            src={"/vestion.svg"}
+                                            alt='VES'
+                                            height={21}
+                                            width={21}
+                                        />
+                                        VES
+                                    </div>
+                                </SelectItem>
+                            </SelectContent>
+                        </Select>
+
                     </div>
 
                     {/* Agreement, Buy Button & Exchange Rate Info */}
