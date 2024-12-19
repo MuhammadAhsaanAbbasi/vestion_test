@@ -19,16 +19,16 @@ const Testimonials = () => {
                 <CarouselContent>
                     {testimonials.map((testimonial, index) => (
                         <CarouselItem key={index} className="px-4 basis-1/2">
-                            <div className="flex items-center bg-transparent px-5 py-6 rounded-xl shadow-lg gap-10 pl-1 md:basis-1/2 lg:basis-1/3">
-                            <div>
-                                <Image
-                                    src={testimonial.picture}
-                                    alt={testimonial.name}
-                                    className="rounded-xl h-60 w-80"
-                                    height={200}
-                                    width={180}
+                            <div className="flex items-center bg-transparent p-6 rounded-xl shadow-lg gap-10 md:basis-1/2 lg:basis-1/3">
+                                <div className="h-[200px] w-[180px]">
+                                    <Image
+                                        src={testimonial.picture}
+                                        alt={testimonial.name}
+                                        className="rounded-xl h-full w-full object-cover"
+                                        height={200}
+                                        width={180}
                                     />
-                                    </div>
+                                </div>
                                 <div className="flex flex-col justify-center items-start gap-4 w-full">
                                     <div className="space-y-2">
                                         <h2 className="text-xl font-normal">
@@ -46,8 +46,10 @@ const Testimonials = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white" />
-                <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white" />
+                <div>
+                <CarouselPrevious className="" />
+                <CarouselNext className="" />
+                </div>
             </Carousel>
         </section>
     );

@@ -92,16 +92,16 @@ export const testimonials = [
     {
         quote:
             "Lorem ipsum dolor sit amet consectetur. Bibendum quis fringilla odio maecenas magna eu ultrices aliquam egestas. Enim phasellus eu commodo nibh vitae amet elit. Ut natoque dui.",
-        name: "Adrian Hajdin",
-        picture: "https://myapplication-logos.s3.ap-south-1.amazonaws.com/Adrian.jpeg",
+        name: "Ameen Alam",
+        picture: "https://res.cloudinary.com/dw51hrvbj/image/upload/v1734583700/zdguvqg4vogfxznp68ak.jpg",
         position: "CEO",
         company: "IT, Company"
     },
     {
         quote:
             "Lorem ipsum dolor sit amet consectetur. Bibendum quis fringilla odio maecenas magna eu ultrices aliquam egestas. Enim phasellus eu commodo nibh vitae amet elit. Ut natoque dui.",
-        name: "Ameen Alam",
-        picture: "https://myapplication-logos.s3.ap-south-1.amazonaws.com/ameen.jpeg",
+        name: "Adrian Hajdin",
+        picture: "https://res.cloudinary.com/dw51hrvbj/image/upload/v1734583702/hoyo6nn62wyk6rwf1vge.jpg",
         position: "CEO",
         company: "IT, Company"
     },
